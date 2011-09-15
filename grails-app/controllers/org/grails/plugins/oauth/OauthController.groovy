@@ -16,7 +16,9 @@ package org.grails.plugins.oauth
  * limitations under the License.
  */
 
-@Mixin(OauthState)
+import spock.lang.Unroll
+
+@Mixin(org.grails.plugins.oauth.OauthState)
 class OauthController {
     
 	OauthService oauthService

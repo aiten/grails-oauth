@@ -7,7 +7,7 @@ import spock.lang.Unroll
 
 class ConfigurationSpec extends UnitSpec {
 
-    @Unroll("Socket timeout is correctly read when socket timeout is #socketTimeout and connection timeout is #connectionTimeout")
+    @Unroll({"Socket timeout is correctly read when socket timeout is #socketTimeout and connection timeout is #connectionTimeout"})
     def "Socket timeout is read correctly"() {
 
         given:

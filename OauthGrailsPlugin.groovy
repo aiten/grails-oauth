@@ -31,5 +31,5 @@ class OauthGrailsPlugin {
         final def oauthService = event?.ctx?.getBean("oauthService")
         oauthService?.reset()
     }
-    
+	
 }

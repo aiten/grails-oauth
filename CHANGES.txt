@@ -10,7 +10,8 @@ Release notes 0.14 (TBA)
 
 Release notes 0.13 (15th September, 2011)
 - Fix for timeout issue, and new taglib.
-- Upgrade to Grails 2.0.0.M1
+- Upgrade to Grails 2.0.0.M1.
+- Switch datasource to H2.
 - Update README to reflect issue tracker re-location.
 
 Release notes 0.12 (28th August, 2011)

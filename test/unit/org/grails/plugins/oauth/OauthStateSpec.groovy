@@ -3,7 +3,7 @@ package org.grails.plugins.oauth
 import grails.plugin.spock.UnitSpec
 import spock.lang.Unroll
 
-@Mixin(uk.co.desirableobjects.credit.control.OAuthState)
+@Mixin(org.grails.plugins.oauth.OauthState)
 class OauthStateSpec extends UnitSpec {
 
     private static final Map ACTIVE_SESSION = ['oauthToken': [k: 0, v: 0]]
@@ -21,7 +21,6 @@ class OauthStateSpec extends UnitSpec {
             sessionContent              | sessionActive
             [:]                         | false
             ACTIVE_SESSION              | true
-
     }
 
     def "Retrieve credentials where session is #sessionContent"() {
@@ -36,7 +35,5 @@ class OauthStateSpec extends UnitSpec {
             sessionContent              | expectedCredentials
             [:]                         | null
             ACTIVE_SESSION              | ACTIVE_SESSION[OAUTH_SESSION_KEY]
-
     }
-
 }

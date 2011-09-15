@@ -98,31 +98,15 @@ class OauthTagLib {
 	    }
 	}
 
-    def connected = { attrs, body ->
-
-        if (oauthSession) {
-            out << body()
-        }
-
-     }
-
-     def disconnected = { attrs, body ->
-
-        if (!oauthSession) {
-
-            out << body()
-        }
-
-     }
-
-     def xeroLink = { attrs, body ->
-
-         out << g.oauthLink([consumer  :'creditApp',
-                           'class'   :attrs?.'class',
-                           returnTo  :[controller:'home', action:'dashboard'],
-                           error     :[controller:'home', action:'connection_failed']
-                         ]) { body() }
-
-     }
-
+	def connected = { attrs, body ->
+		if (oauthSession) {
+			out << body()
+		}
+	}
+	
+	def disconnected = { attrs, body ->
+		if (!oauthSession) {
+			out << body()
+		}
+	}
 }
