@@ -32,7 +32,14 @@ grails.project.dependency.resolution = {
     }
 
     plugins {
-        test ':spock:0.5-groovy-1.7'
+        compile ":hibernate:$grailsVersion"
+        compile ":jquery:1.6.1.1"
+        compile ":resources:1.0.2"
+        compile ":release:1.0.0.RC3"
+
+        build ":tomcat:$grailsVersion"
+		
+        test ":spock:0.6-SNAPSHOT"
     }
 }
 

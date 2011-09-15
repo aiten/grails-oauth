@@ -25,7 +25,7 @@ service API. Refer to the OAuth 1.0 spec for complete details.
 
 If you find any issues, please submit a bug on JIRA:
 
-    http://jira.codehaus.org/browse/GRAILSPLUGINS
+    https://github.com/acampbell3000/grails-oauth/issues
 
 Please look at the CHANGES file to see what has changed since the last 
 official release.
@@ -340,5 +340,5 @@ Contribute
 If you wish to contribute to the project you can find the full
 source available on GitHub.org:
 
-    * http://wiki.github.com/dhou/grails-oauth
+    * http://wiki.github.com/acampbell3000/grails-oauth
 

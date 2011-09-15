@@ -1,12 +1,17 @@
-Version 0.12
+Version 0.13
 
 Potential improvements:
 - Unit test coverage.
 - Split OauthServiceException.
 - OAuth 2.0 support.
 
-Release notes 0.13 (TBA)
+Release notes 0.14 (TBA)
 - 
+
+Release notes 0.13 (15th September, 2011)
+- Fix for timeout issue, and new taglib.
+- Upgrade to Grails 2.0.0.M1
+- Update README to reflect issue tracker re-location.
 
 Release notes 0.12 (28th August, 2011)
 - Allowed proper handling of RESTful responses.
