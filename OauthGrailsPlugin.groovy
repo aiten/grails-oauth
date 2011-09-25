@@ -19,8 +19,8 @@ class OauthGrailsPlugin {
     
     def version = 0.13
     def dependsOn = [:]
-    def author = "Yong Rong (Damien) Hou, Anthony Campbell"
-    def authorEmail = "houyongr [[at] gmail [dot]] com, acampbell3000 [[at] gmail [dot]] com"
+    def author = "Yong Rong (Damien) Hou, Anthony Campbell, Antony Jones (Desirable Objects)"
+    def authorEmail = "houyongr [[at] gmail [dot]] com, acampbell3000 [[at] gmail [dot]] com, aj [[at] desirableobjects [dot] co [dot]] uk"
     def title = "Adds OAuth capability to Grails apps"
     def description = '''Wraps up the Signpost OAuth Java implementation and provides out-of-the-box
 	OAuth functionality for Grails appplications.'''

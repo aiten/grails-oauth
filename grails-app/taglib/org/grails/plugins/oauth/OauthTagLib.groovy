@@ -16,6 +16,7 @@ package org.grails.plugins.oauth
  * limitations under the License.
  */
 
+@Mixin(OauthState)
 class OauthTagLib {
 
     static namespace = 'oauth'
@@ -35,7 +36,7 @@ class OauthTagLib {
 	 * <g:oauthLink consumer='myConsumer' returnTo="[controller:'myController',action:'oauthComplete']" error="[controller:'errorController',action:'errorAction']">Authorize</g:oauthLink>
 	 */
 	def link = { attrs, body ->
-	    attrs.url = g.oauthUrl(attrs)
+	    attrs.url = oauth.url(attrs)
 	    out << g.link(attrs, body)
 	}
 	 
