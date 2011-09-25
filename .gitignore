@@ -1,12 +1,17 @@
 .classpath
 .project
 .settings
-target/
-target-eclipse/
-web-app/WEB-INF/
+.idea
+*.iml
+*.ipr
+target
+target-eclipse
+web-app/WEB-INF
 *.log
 *.swp
 *.tld
 *.ser
-*.tld
+plugin.xml
+*.zip
+out
 
