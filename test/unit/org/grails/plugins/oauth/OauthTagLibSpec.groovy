@@ -6,7 +6,7 @@ import spock.lang.Unroll
 @Mixin(org.grails.plugins.oauth.OauthState)
 class OauthTagLibSpec extends TagLibSpec {
 	
-	@Unroll({"Tag renders #renderedContent if session is (#sessionContent)"})
+	@Unroll("Tag renders #renderedContent if session is (#sessionContent)")
 	def "Tag renders or does not render depending on session"() {
 
 		given:
